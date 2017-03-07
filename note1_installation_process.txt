@@ -1,0 +1,88 @@
+###################################################################
+##################### for Ubuntu 12.04 64 bit #####################
+###################################################################
+
+ref. : http://ramsrigoutham.com/2012/07/08/getting-started-with-kinect-on-ubuntu-12-04-openni-nite-simpleopenni-and-processing/
+       http://docs.opencv.org/doc/user_guide/ug_highgui.html
+       http://choorucode.com/2013/07/23/how-to-build-opencv-with-openni-on-ubuntu/
+
+------ Computer Environment ------
+
+OS : Ubuntu 12.04 64 bit in U33X (done)
+     Ubuntu 14.04 64 bit in U33X (done)
+     
+     Xubuntu 12.04 64 bit in Odoroid (X)
+
+----------------------------------
+
+1. Install OpenNI, NITE, Sensor package
+
+in xtionpro_install/Linux-x64-20.4.2.20 folder
+
+(Linux-x64-20.4.2.20.rar Zip file�� Asus_Xtion_InstallCD.ISO�� ����.)
+
+for Linux Ubuntu :
+The installation steps as follows,
+(1) install OpenNI package (�� ���� �ȿ��� $ sudo ./install.sh)
+(2) install Sensor package (�� ���� �ȿ��� $ sudo ./install.sh)
+(3) install NITE package   (�� ���� �ȿ��� $ sudo ./install.sh)
+
+2. Install OpenCV with OpenNI
+
+in xtionpro_install/opencv-2.4.9 folder
+
+(1) Download the OpenCV latest version (http://opencv.org/downloads.html) 
+
+in opencv-2.4.9 folder, mkdir build and use CMake-gui.
+
+for cmake-gui : 
+The installation steps as follows,
+Where is the source code : /home/pjinkim/xtionpro_install/opencv-2.4.9
+Where to build the binaries : /home/pjinkim/xtionpro_install/opencv-2.4.9/build
+
+Configure (Unix Makefiles) and check <WITH_OPENNI> and Configure again.
+
+Make sure that the folders to OpenNI and Kinect drivers are correct and click configure again. If everything is fine then there will be no entries marked in red. To make sure that the build is configured properly with OpenNI, see the OPENNI field in the output window, it should say YES and should be configured with SensorKinect drivers.
+
+Now finally click Generate. (������� �ϸ� build ������ ������Ʈ ���� �Ϸ�)
+
+(2) in ~/opencv-2.4.9/build
+
+$ make (�� �� �ɸ�.....)
+
+$ sudo make install
+
+check with $ pkg-config --modversion opencv 
+
+(3) Test the rgbd camera with <rgbd_tutorial> and enjoy ~~~
+
+
+###################################################################
+##################### for Windows 7 64 bit ########################
+###################################################################
+
+ �� ���� Xtion Pro Live (ASUS)�� VisualStudio10 (Windows 7 64 bit)���� 
+ ����ϱ� ��ȯ ���� ȯ�� ������ ���� �ȳ��� �Դϴ�. ���������� ����ϼ���.
+ 
+ ref : 
+ http://t9t9.com/489
+ http://seevisionc.blogspot.kr/2012/07/compiling-opencv-with-openni-for.html
+ http://docs.opencv.org/doc/user_guide/ug_highgui.html
+
+------ Computer Environment ------
+
+OS : Windows 7 64bit 
+
+IDE : VisualStudio 10 Ultimate
+
+-----------------------------------
+
+1. Install OpenNI and PrimeSense folder in C drive using 'Asus_Xtion_InstallCD.ISO'
+
+2. Check RGB-D drivers are installed correctly.
+   (Run C:\Program Files\OpenNI\Samples\Bin64\Release\NiSimpleViewer64.exe)
+
+3. Read and Follow 'Compiling OpenCV with OpenNI for Microsoft Kinect Sensor' 
+    or visit http://seevisionc.blogspot.kr/2012/07/compiling-opencv-with-openni-for.html
+
+4. Test main files in exam_codes and Enjoy !! 
