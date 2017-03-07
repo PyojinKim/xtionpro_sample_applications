@@ -10,7 +10,7 @@ ref. : http://ramsrigoutham.com/2012/07/08/getting-started-with-kinect-on-ubuntu
 
 OS : Ubuntu 12.04 64 bit in U33X (done)
      Ubuntu 14.04 64 bit in U33X (done)
-     
+
      Xubuntu 12.04 64 bit in Odoroid (X)
 
 ----------------------------------
@@ -31,11 +31,11 @@ The installation steps as follows,
 
 in xtionpro_install/opencv-2.4.9 folder
 
-(1) Download the OpenCV latest version (http://opencv.org/downloads.html) 
+(1) Download the OpenCV latest version (http://opencv.org/downloads.html)
 
 in opencv-2.4.9 folder, mkdir build and use CMake-gui.
 
-for cmake-gui : 
+for cmake-gui :
 The installation steps as follows,
 Where is the source code : /home/pjinkim/xtionpro_install/opencv-2.4.9
 Where to build the binaries : /home/pjinkim/xtionpro_install/opencv-2.4.9/build
@@ -52,7 +52,7 @@ $ make (�� �� �ɸ�.....)
 
 $ sudo make install
 
-check with $ pkg-config --modversion opencv 
+check with $ pkg-config --modversion opencv
 
 (3) Test the rgbd camera with <rgbd_tutorial> and enjoy ~~~
 
@@ -61,17 +61,17 @@ check with $ pkg-config --modversion opencv
 ##################### for Windows 7 64 bit ########################
 ###################################################################
 
- �� ���� Xtion Pro Live (ASUS)�� VisualStudio10 (Windows 7 64 bit)���� 
+ �� ���� Xtion Pro Live (ASUS)�� VisualStudio10 (Windows 7 64 bit)����
  ����ϱ� ��ȯ ���� ȯ�� ������ ���� �ȳ��� �Դϴ�. ���������� ����ϼ���.
- 
- ref : 
+
+ ref :
  http://t9t9.com/489
  http://seevisionc.blogspot.kr/2012/07/compiling-opencv-with-openni-for.html
  http://docs.opencv.org/doc/user_guide/ug_highgui.html
 
 ------ Computer Environment ------
 
-OS : Windows 7 64bit 
+OS : Windows 7 64bit
 
 IDE : VisualStudio 10 Ultimate
 
@@ -82,7 +82,7 @@ IDE : VisualStudio 10 Ultimate
 2. Check RGB-D drivers are installed correctly.
    (Run C:\Program Files\OpenNI\Samples\Bin64\Release\NiSimpleViewer64.exe)
 
-3. Read and Follow 'Compiling OpenCV with OpenNI for Microsoft Kinect Sensor' 
+3. Read and Follow 'Compiling OpenCV with OpenNI for Microsoft Kinect Sensor'
     or visit http://seevisionc.blogspot.kr/2012/07/compiling-opencv-with-openni-for.html
 
-4. Test main files in exam_codes and Enjoy !! 
+4. Test main files in exam_codes and Enjoy !!
