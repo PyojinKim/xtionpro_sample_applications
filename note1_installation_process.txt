@@ -19,13 +19,13 @@ OS : Ubuntu 12.04 64 bit in U33X (done)
 
 in xtionpro_install/Linux-x64-20.4.2.20 folder
 
-(Linux-x64-20.4.2.20.rar Zip file�� Asus_Xtion_InstallCD.ISO�� ����.)
+(Linux-x64-20.4.2.20.rar Zip file from Asus_Xtion_InstallCD.ISO)
 
 for Linux Ubuntu :
 The installation steps as follows,
-(1) install OpenNI package (�� ���� �ȿ��� $ sudo ./install.sh)
-(2) install Sensor package (�� ���� �ȿ��� $ sudo ./install.sh)
-(3) install NITE package   (�� ���� �ȿ��� $ sudo ./install.sh)
+(1) install OpenNI package ($ sudo ./install.sh)
+(2) install Sensor package ($ sudo ./install.sh)
+(3) install NITE package   ($ sudo ./install.sh)
 
 2. Install OpenCV with OpenNI
 
@@ -33,7 +33,9 @@ in xtionpro_install/opencv-2.4.9 folder
 
 (1) Download the OpenCV latest version (http://opencv.org/downloads.html)
 
-in opencv-2.4.9 folder, mkdir build and use CMake-gui.
+$ sudo apt-get install libgtk2.0-dev cmake-qt-gui
+
+in opencv-2.4.9 folder, mkdir build and use cmake-gui.
 
 for cmake-gui :
 The installation steps as follows,
@@ -44,15 +46,13 @@ Configure (Unix Makefiles) and check <WITH_OPENNI> and Configure again.
 
 Make sure that the folders to OpenNI and Kinect drivers are correct and click configure again. If everything is fine then there will be no entries marked in red. To make sure that the build is configured properly with OpenNI, see the OPENNI field in the output window, it should say YES and should be configured with SensorKinect drivers.
 
-Now finally click Generate. (������� �ϸ� build ������ ������Ʈ ���� �Ϸ�)
+Now finally click Generate.
 
 (2) in ~/opencv-2.4.9/build
 
-$ make (�� �� �ɸ�.....)
-
+$ make -j4
 $ sudo make install
-
-check with $ pkg-config --modversion opencv
+$ pkg-config --modversion opencv
 
 (3) Test the rgbd camera with <rgbd_tutorial> and enjoy ~~~
 
