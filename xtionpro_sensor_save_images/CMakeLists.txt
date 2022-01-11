@@ -2,7 +2,7 @@
 SET(PROJECT_NAME xtionpro_sensor_save_images)
 PROJECT(${PROJECT_NAME} CXX C)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.3)
-SET(OpenCV_DIR /home/icsl-rover-01/Documents/xtionpro_install/opencv-2.4.9/build/)
+SET(OpenCV_DIR /home/pjinkim/xtionpro_install/opencv-2.4.9/build/)
 SET(Boost_USE_MULTITHREADED ON)
 
 

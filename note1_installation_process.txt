@@ -1,17 +1,16 @@
 ###################################################################
-##################### for Ubuntu 12.04 64 bit #####################
+##################### for Ubuntu 14.04 64 bit #####################
 ###################################################################
 
-ref. : http://ramsrigoutham.com/2012/07/08/getting-started-with-kinect-on-ubuntu-12-04-openni-nite-simpleopenni-and-processing/
-       http://docs.opencv.org/doc/user_guide/ug_highgui.html
-       http://choorucode.com/2013/07/23/how-to-build-opencv-with-openni-on-ubuntu/
-
------- Computer Environment ------
+------ Tested Environment ------
 
 OS : Ubuntu 12.04 64 bit in U33X (done)
      Ubuntu 14.04 64 bit in U33X (done)
+     Ubuntu 14.04 64 bit in MSI GS60 (done)
 
      Xubuntu 12.04 64 bit in Odoroid (X)
+     Ubuntu 16.04 64 bit in LG gram (X)
+     Ubuntu 18.04 64 bit in LG gram (X)
 
 ----------------------------------
 
@@ -55,6 +54,7 @@ $ sudo make install
 $ pkg-config --modversion opencv
 
 (3) Test the rgbd camera with <rgbd_tutorial> and enjoy ~~~
+
 
 
 ###################################################################
